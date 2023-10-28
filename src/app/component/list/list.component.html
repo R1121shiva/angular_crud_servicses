@@ -1,0 +1,22 @@
+<table id="customers">
+    <tr>
+      <th>Id</th>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Email</th>
+      <th>Website Name</th>
+      <th>Action</th>
+
+    </tr>
+    <tr *ngFor="let x of data;let i=index">
+      <td>{{i + 1}}</td>
+      <td>{{x.firstName}}</td>
+      <td>{{x.lastName}}</td>
+      <td>{{x.email}}</td>
+      <td>{{x.websiteName}}</td>
+      <td class="btn-group">
+        <button class="edit-btn" (click)="handleEdit(i)">Edit</button>
+        <button class="delete-btn" (click)="handleDelete(i)">Delete</button>
+    </td>
+    </tr>
+  </table>

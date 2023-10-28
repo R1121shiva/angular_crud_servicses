@@ -1,0 +1,26 @@
+<p>home works!</p>
+<h2>{{title | uppercase}}</h2>
+<h2>{{title | lowercase}}</h2>
+<h2>{{title | slice:6}}</h2>
+
+
+
+
+Date: {{ dateToday  }} <br>
+
+Date Pipe: {{ dateToday | date }}<br>
+<h4>{{childdata}}</h4>
+<table>
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Gender</th>
+        <th>Area</th>
+    </tr>
+    <tr *ngFor="let x of studentData">
+        <td>{{x.id}}</td>
+        <td>{{x.name | custompipe : x.gender}}</td>
+        <td>{{x.gender}}</td>
+        <td>{{x.area}}</td>
+    </tr>
+</table>
