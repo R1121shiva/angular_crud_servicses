@@ -9,13 +9,15 @@ import { CustompipePipe } from './custompipe.pipe';
 import { ListComponent } from './component/list/list.component';
 import { FormsModule } from '@angular/forms';
 import { DataService } from './service/data.service';
+import { LoginComponent } from './component/login/login.component';
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     AboutComponent,
     CustompipePipe,
-    ListComponent
+    ListComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,

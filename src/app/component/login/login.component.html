@@ -1,0 +1,14 @@
+<div class="signin-page">
+    <form>
+        <h3>SIGN IN</h3>
+        <div class="form-field">
+            <input type="text" placeholder="Username" #userName />
+        </div>
+        <div class="form-field">
+            <input type="text" placeholder="Password" #password />
+        </div>
+        <div class="form-field">
+            <button class="login-btn" type="submit" (click)="login(userName.value , password.value)">Login</button>
+        </div>
+    </form>
+</div>
